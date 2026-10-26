@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h2>Job Application</h2>
+        <h3>Please fill out the form carefully to register your profile.</h3>
+
+    </div>
+    <div class="main">
+
+
+        <!-- ---------------------Personal details section-------------------------- -->
+        <div class="details">
+            <h4>Personal Details</h4>
+            <div class="form">
+                <form>
+                    <b>Full Name:</b>
+                    <input type="text" id="name" value="John Doe"
+                        style="background-color:gainsboro; border-radius:5px;padding:5px;border: 2px solid rgba(220, 220, 220, 0.295);">
+                </form>
+                <form>
+                    <b> Email Address:</b>
+                    <input type="email" id="email" value="john@example.com"
+                        style="padding:5px;border-radius:5px; border: 2px solid gainsboro;">
+                </form>
+                <form>
+                    <b> Phone Number:</b>
+                    <input type="number" id="number" value="1234567890"
+                        style="padding:5px;border-radius:5px;border: 2px solid gainsboro;">
+                </form>
+                <form>
+                    <b>Password:</b>
+                    <input type="password" id="pass" value="............"
+                        style="padding:5px;border-radius:5px;border: 2px solid gainsboro;">
+                </form>
+            </div>
+        </div>
+
+
+        <!-- ---------------------Personal details section ended-------------------------- -->
+
+
+        <!-- -------------------------Professional Profile Section----------------------------- -->
+
+        <div class="professional">
+            <h4 id="pro">Professional Profile</h4>
+            <div class="url">
+                <form>
+                    <b> Portfolio//LinkedIn URL</b>
+                    <input type="url" id="link" value="https://linkedin.com/in/username"
+                        style="width:210px;padding:5px;border-radius:5px; border: 2px solid gainsboro;">
+                </form>
+                <form>
+                    <b> Years of Experience</b>
+                    <input type="number" id="num" value="3"
+                        style="width:150px;padding:5px;border-radius:5px; border: 2px solid gainsboro;">
+                </form>
+
+                <form>
+                    <b> Upload Resume</b>
+                    <input type="file" id="file"
+                        style="width:80px;border-radius:5px; border: 2px dotted gainsboro;padding:5px;">
+                </form>
+                <form>
+                    <b>Primary Skill</b>
+                    <input type="search" id="search" placeholder="Search skill....&nbsp;&nbsp;&nbsp;🔍"
+                        style="width:140px;padding:5px;border-radius:5px; border: 2px solid gainsboro;">
+                </form>
+            </div>
+        </div>
+        <!---------------------------Professional Profile Section Ended------------------------------->
+
+        <!-- ---------------------------Range Section started------------------------------------------- -->
+
+        <div class="div3">
+            <form style="font-size:18px;">
+                Expected Annual salary:<b>$60k</b>
+                <br>
+                <input type="range" id="range" style="width:745px;">
+            </form>
+        </div>
+
+        <h4>Scheduling & Preferences</h4>
+        <div class="schedule">
+            <form>
+                <b> Available Start Month</b>
+                <br>
+                <select id="course" style="width:200px;padding:5px;border-radius:5px; border: 2px solid gainsboro;">
+                    <option>Month</option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </form>
+            <br>
+            <form>
+                <b>Preferred Onboarding Week</b>
+                <br>
+                <select id="Prefer" style="width:200px;padding:5px;border-radius:5px ;border: 2px solid gainsboro;">
+                    <option>Preferred</option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </form>
+            <br>
+            <form>
+                <b>Interview Time Slot</b>
+                <br>
+                <select id="int" style="width:200px;padding:5px;border-radius:5px ;border: 2px solid gainsboro;">
+                    <option>Interview</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </form>
+        </div>
+
+        <!-- ----------------------------Range section ended-------------------------- -->
+
+        <h4 style="font-size:15px;padding:10px;margin-top: 10px;">I agree to the <span
+                style="color:darkblue;">Terms,Conditions,</span>and <span style="color: darkblue;">Privacy
+                Policy.</span></h4>
+        <div class="footer">
+            <div
+                style="background-color:rgba(197, 196, 196, 0.651);width:90px;padding:10px;text-align: center;border-radius:5px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onclick="SaveDraft()">
+             Save Draft</div>
+            <div class="container">
+                <div
+                    style="color: red;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;border:2px solid red;width:70px;padding:5px;border-radius:5px;text-align: center;">
+                    Reset</div>
+                <div
+                    style="background-color: darkblue;color: white;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;width:160px;padding:10px;text-align: center;border-radius:5px;" onclick="Submit()">
+                    Submit Application</div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
